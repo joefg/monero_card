@@ -1,0 +1,45 @@
+\documentclass[10pt, oneside, final]{article}
+
+% You may want to use lualatex on the basis that
+% lualatex handles fonts better.
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{MoneroGothic}
+\setsansfont[Ligatures=TeX]{MoneroGothic}
+
+\usepackage{parskip}           % remove paragraph indents
+\usepackage{graphicx}
+\usepackage{setspace}
+
+% set all margins to 0 and set business card size
+\usepackage[
+  paperwidth = 85mm,
+  paperheight = 55mm,
+  margin = 0.2in,
+  noheadfoot
+]{geometry}
+
+% interline spacing
+\setlength{\baselineskip}{0cm} % between baselines
+\setlength{\topskip}{0pt}      % between header and text block
+
+% wrapping text around figure
+\usepackage{wrapfig}
+
+% Double space everything
+\doublespacing
+
+\begin{document}
+		\thispagestyle{empty}
+
+		% Monero logo
+		\begin{center}
+				\includegraphics[width = 0.9\textwidth]{monero-logo-800.png}
+		\end{center}
+
+		% Text
+		\centerline{\large\textsf{\textbf{YOUR MONEY IS BEING MONITORED.}}}
+		\centerline{\large\textsf{\textbf{Perhaps you need Monero.}}}
+
+		% Link to getmonero.org
+		\centerline{\textsf{\textbf{getmonero.org}}}
+\end{document}
