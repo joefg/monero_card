@@ -1,12 +1,12 @@
 # Monero Propaganda Card
 
-Ever want to deploy some discreet Monero propaganda?
+Some discreet Monero propaganda.
+
+![Preview](preview.png)
 
 ## Instructions
 
 This is a standard UK-sized business card, although you can change the size in the `front.tex` file. If you're happy with it as-is, just send the completed pdf to the printer of your choice.
-
-The thing to do, I hear, is to leave these behind when you pay the bill for your nice dinner. You could also strategically deploy these as "discarded bookmarks" left inside books at the library, or leave one under the windscreen wiper of your friendly HMRC employee.
 
 ## Typesetting
 
@@ -49,7 +49,7 @@ Inside the `document` section, you'll find the text content. This is what you'll
 
 		% Monero logo
 		\begin{center}
-				\includegraphics[width = 0.9\textwidth]{monero-logo-800.png}
+			\includegraphics[width = 0.9\textwidth]{monero-logo-800.png}
 		\end{center}
 
 		% Text
